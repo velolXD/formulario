@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: formulario-contacto
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
