@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Reply-To: $nombre_remitente <$email_remitente>\r\n";
 
     // Enviar el correo
-    if (mail($destinatario, $asunto, $mensaje,$nombre_remitente,$email_remitente)) {
+    if (mail($destinatario, $asunto, $mensaje, $nombre_remitente, $email_remitente)) {
         echo "El correo ha sido enviado correctamente.";
     } else {
         echo "Hubo un error al enviar el correo.";
